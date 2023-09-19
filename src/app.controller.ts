@@ -17,7 +17,7 @@ export class AppController {
       res.setHeader('Content-Disposition', 'attachment; filename=test.pdf');
       res.status(HttpStatus.OK).send(pdf);
     } catch (error) {
-      res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({ error: 'Failed to generate PDF' });
+      res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({ error: 'Failed to generate PDF!' });
     }
   }
 }
